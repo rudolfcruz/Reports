@@ -205,6 +205,7 @@
     <Content Include="Reportes\img\Excel-icon3.png" />
     <Content Include="Reportes\img\guardar.png" />
     <Content Include="Reportes\img\LogoRep.jpg" />
+    <Content Include="Reportes\img\mapa.gif" />
     <Content Include="Reportes\img\PDF-icon2.png" />
     <Content Include="Reportes\img\PDF-icon3.png" />
     <Content Include="Reportes\img\pIkfp.gif" />

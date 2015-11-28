@@ -55,13 +55,13 @@ namespace Presentacion.Reportes
                 HyperLink linkPDF = new HyperLink();
                 linkPDF.ID = "linkRepHis" + dat[0];
                 linkPDF.ImageUrl = "../Reportes/img/PDF-icon3.png";
-                linkPDF.NavigateUrl = "/Reportes/frmGenRep.aspx?tipo=PDF&rep=" + dat[0];
+                linkPDF.NavigateUrl = "../Reportes/frmGenRep.aspx?tipo=PDF&rep=" + dat[0];
                 linkPDF.Attributes.Add("onClick", "javascript:return AgregaCampoTablaSel_Click(" + dat[0] + ", this);");
 
                 HyperLink linkExl = new HyperLink();
                 linkExl.ID = "linkRepHis" + dat[0];
                 linkExl.ImageUrl = "../Reportes/img/Excel-icon3.png";
-                linkExl.NavigateUrl = "/Reportes/frmGenRep.aspx?tipo=XLS&rep=" + dat[0];
+                linkExl.NavigateUrl = "../Reportes/frmGenRep.aspx?tipo=XLS&rep=" + dat[0];
                 linkExl.Attributes.Add("onClick", "javascript:return AgregaCampoTablaSel_Click(" + dat[0] + ", this);");
 
                 HyperLink linkLatLong = null;
@@ -71,8 +71,9 @@ namespace Presentacion.Reportes
                     linkLatLong = new HyperLink();
                     linkLatLong.ID = "linkRepHisLatLon" + dat[0];
                     linkLatLong.ImageUrl = "../Reportes/img/mapa.gif";
-                    linkLatLong.NavigateUrl = "/XXXXXXX/XXXXXXXXX.aspx?historicoID="+dat[0]+"&nombre=" + dat[1];
+                    linkLatLong.NavigateUrl = "http://WIN-9FPINIQC47N/AppBarandillas/Remision/MapReport.aspx?HistoricoID=" + dat[0]+ "&TituloReporte=" + dat[1];
                     linkLatLong.Attributes.Add("onClick", "javascript:return AbreVentanaMapa(" + dat[0] + ", '"+dat[1]+"');");
+                    
                 }
 
 

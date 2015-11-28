@@ -11,8 +11,7 @@
 
 
     function AbreVentanaMapa(idHistorial, nombreRep) {
-        alert("va abrir ventana mapa...:"+idHistorial+":"+nombreRep);
-        window.open("/XXXXXXX/XXXXXXXXX.aspx??" + encodeURI("historicoID=" + idHistorial + "&nombre=" + nombreRep), '_blank');
+        window.open("http://WIN-9FPINIQC47N/AppBarandillas/Remision/MapReport.aspx?" + encodeURI("HistoricoID=" + idHistorial + "&TituloReporte=" + nombreRep), '_blank');
         return false;
     }
 </script>

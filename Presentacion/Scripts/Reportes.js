@@ -20,7 +20,7 @@ function ShowFiltrosModal() {
     var cont = $("#" + gPrefijo + "CamposSeleccionados option").length;
     if (cont > 0) {
         $("#contenedorFiltro").empty();
-        $("#contenedorFiltro").load("/Reportes/frmFiltros.aspx");
+        $("#contenedorFiltro").load("../Reportes/frmFiltros.aspx");
         $find('mpeSeleccion').show();
     } else {
         alert("Seleccione campos al reporte");
